@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.55695ef4.chunk.css",
-    "main.js": "/static/js/main.53f0a996.chunk.js",
-    "main.js.map": "/static/js/main.53f0a996.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8840093a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8840093a.js.map",
-    "static/js/2.35187237.chunk.js": "/static/js/2.35187237.chunk.js",
-    "static/js/2.35187237.chunk.js.map": "/static/js/2.35187237.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.4482ea15a7b20e5c63a302af373d8dbb.js": "/precache-manifest.4482ea15a7b20e5c63a302af373d8dbb.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.55695ef4.chunk.css.map": "/static/css/main.55695ef4.chunk.css.map",
-    "static/js/2.35187237.chunk.js.LICENSE.txt": "/static/js/2.35187237.chunk.js.LICENSE.txt"
+    "main.css": "/tmn-chatbot-console/static/css/main.55695ef4.chunk.css",
+    "main.js": "/tmn-chatbot-console/static/js/main.35bb3b24.chunk.js",
+    "main.js.map": "/tmn-chatbot-console/static/js/main.35bb3b24.chunk.js.map",
+    "runtime-main.js": "/tmn-chatbot-console/static/js/runtime-main.1f14c17f.js",
+    "runtime-main.js.map": "/tmn-chatbot-console/static/js/runtime-main.1f14c17f.js.map",
+    "static/js/2.35187237.chunk.js": "/tmn-chatbot-console/static/js/2.35187237.chunk.js",
+    "static/js/2.35187237.chunk.js.map": "/tmn-chatbot-console/static/js/2.35187237.chunk.js.map",
+    "index.html": "/tmn-chatbot-console/index.html",
+    "precache-manifest.aa4fd02016de626ccf9011b5232d3217.js": "/tmn-chatbot-console/precache-manifest.aa4fd02016de626ccf9011b5232d3217.js",
+    "service-worker.js": "/tmn-chatbot-console/service-worker.js",
+    "static/css/main.55695ef4.chunk.css.map": "/tmn-chatbot-console/static/css/main.55695ef4.chunk.css.map",
+    "static/js/2.35187237.chunk.js.LICENSE.txt": "/tmn-chatbot-console/static/js/2.35187237.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8840093a.js",
+    "static/js/runtime-main.1f14c17f.js",
     "static/js/2.35187237.chunk.js",
     "static/css/main.55695ef4.chunk.css",
-    "static/js/main.53f0a996.chunk.js"
+    "static/js/main.35bb3b24.chunk.js"
   ]
 }
