@@ -4,7 +4,8 @@ import './App.css'
 import { v5 as uuidv5 } from 'uuid'
 
 const RootContainer = styled.div`
-  width: 100%;
+  width: 99%;
+  margin: 4px;
 
   input {
     width: 100%;
@@ -20,7 +21,6 @@ const ColContainer = styled.div`
 
   span {
     display: contents;
-    padding: 2px;
   }
 
   textarea {
@@ -41,6 +41,7 @@ function App() {
   const [request, setRequest] = useState()
   const [response, setResponse] = useState()
   const [text, setText] = useState()
+  const [loading, setLoading] = useState(false)
 
   const makeRequestPacket = (session_id, text) => {
     const headers = {
@@ -60,9 +61,11 @@ function App() {
   }
 
   const send = async api_uri => {
+    setLoading(true)
     const res = await fetch(api_uri, request)
     const json = await res.json()
 
+    setLoading(false)
     setResponse(json)
   }
 
@@ -73,6 +76,7 @@ function App() {
 
   const onSubmit = e => {
     e.preventDefault()
+
     send(api_uri)
   }
 
@@ -92,8 +96,6 @@ function App() {
         <span>
           <input readOnly value={api_uri} />{' '}
         </span>
-      </ColContainer>
-      <ColContainer>
         <span>session_id</span>
         <span>
           <input readOnly value={session_id} />
@@ -105,13 +107,14 @@ function App() {
       </ColContainer>
       <form onSubmit={onSubmit}>
         <ColContainer>
+          <span>Message</span>
           <input onChange={onChange} defaultValue={text} />
           <button>SEND</button>
         </ColContainer>
       </form>
       <ColContainer>
         <textarea defaultValue={pretty(request)}></textarea>
-        <textarea defaultValue={pretty(response)}></textarea>
+        <textarea defaultValue={loading ? 'loading...' : pretty(response)}></textarea>
       </ColContainer>
     </RootContainer>
   )
