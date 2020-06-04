@@ -20,6 +20,7 @@ const ColContainer = styled.div`
 
   span {
     display: contents;
+    padding: 2px;
   }
 
   textarea {
@@ -29,7 +30,7 @@ const ColContainer = styled.div`
 `
 
 const session_id = uuidv5.DNS
-const api_key = 'TOBEDEFINE'
+const api_key = ''
 const api_uri = 'https://asia-northeast1-tmn-chatbot.cloudfunctions.net/tmnChatbot/api/v1/webhook/test'
 
 const pretty = json => {
