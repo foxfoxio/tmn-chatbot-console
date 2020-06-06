@@ -31,8 +31,8 @@ const ColContainer = styled.div`
 
 const session_id = uuidv5.DNS
 const api_key = ''
-// const api_uri = 'https://asia-east2-acm-clt-chatbots.cloudfunctions.net/webhook'
-const api_uri = 'https://us-earn-compounds-logic.trycloudflare.com/acm-clt-chatbots/asia-east2/webhook'
+const api_uri = 'https://asia-east2-acm-clt-chatbots.cloudfunctions.net/webhook'
+// const api_uri = 'https://us-earn-compounds-logic.trycloudflare.com/acm-clt-chatbots/asia-east2/webhook'
 
 const pretty = json => {
   return JSON.stringify(json, null, '  ')
