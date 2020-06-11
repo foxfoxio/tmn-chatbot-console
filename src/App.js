@@ -31,8 +31,8 @@ const ColContainer = styled.div`
 
 const session_id = uuidv5.DNS
 const api_key = ''
-const api_uri = 'https://asia-east2-acm-clt-chatbots.cloudfunctions.net/webhook'
-// const api_uri = 'https://us-earn-compounds-logic.trycloudflare.com/acm-clt-chatbots/asia-east2/webhook'
+// const api_uri = 'https://asia-east2-acm-clt-chatbots.cloudfunctions.net/webhook'
+const api_uri = 'https://barbie-mai-convertible-buzz.trycloudflare.com/tmn-chatbot-staging/asia-east2/webhook'
 
 const pretty = json => {
   return JSON.stringify(json, null, '  ')
@@ -44,7 +44,7 @@ function App() {
   const [text, setText] = useState()
   const [loading, setLoading] = useState(false)
 
-  const makeRequestPacket = (session_id, text) => {
+  const makeRequest = (session_id, text) => {
     const headers = {
       'Content-Type': 'application/json'
     }
@@ -81,7 +81,7 @@ function App() {
 
   useEffect(() => {
     if (!text) return
-    makeRequestPacket(session_id, text)
+    makeRequest(session_id, text)
   }, [text])
 
   useEffect(() => {
