@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tmn-chatbot-console/precache-manifest.e20082939ea5fc93ed1cf2bb8144dac4.js"
+  "/tmn-chatbot-console/precache-manifest.fdb1ac657a100aff71461f3897bc8004.js"
 );
 
 self.addEventListener('message', (event) => {
